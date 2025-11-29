@@ -4,6 +4,7 @@ import TechStack from "@/components/TechStack";
 import HeroNodes from "@/components/HeroNodes";
 import ContactActions from "@/components/ContactActions";
 import { projects } from "@/data/projects";
+import FocusOnNavigate from "@/components/FocusOnNavigate";
 
 export default function Home() {
 
@@ -34,6 +35,9 @@ export default function Home() {
       >
         Skip to content
       </a>
+
+      {/* Ensure SPA navigations focus the main content so the skip link doesn't stay visible */}
+      <FocusOnNavigate />
 
       {/* Top navigation with scroll-aware avatar */}
       <HeaderBar />
