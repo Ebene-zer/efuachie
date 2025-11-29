@@ -1,7 +1,7 @@
 import Image from "next/image";
 import HeaderBar from "@/components/HeaderBar";
 import TechStack from "@/components/TechStack";
-import HeroNodes from "@/components/HeroNodes";
+// Decorative hero nodes removed to disable animated background
 import ContactActions from "@/components/ContactActions";
 import { projects } from "@/data/projects";
 import FocusOnNavigate from "@/components/FocusOnNavigate";
@@ -43,50 +43,63 @@ export default function Home() {
       <HeaderBar />
 
       <main id="content" className="mx-auto max-w-5xl px-6 pb-16 sm:pb-24">
-        {/* Hero */}
+        {/* Hero (LinkedIn-like profile style) */}
         <section
           id="home"
-          className="mb-16 scroll-mt-24 sm:mb-24 min-h-[calc(100svh-64px)] sm:min-h-[calc(100svh-64px)] flex items-center relative overflow-hidden hero-flow pt-10 sm:pt-14"
+          className="mb-16 scroll-mt-24 sm:mb-24 min-h-[calc(100svh-64px)] flex items-center relative overflow-hidden pt-10 sm:pt-14"
         >
-          {/* Decorative process icons (nodes) drifting behind content */}
-          <HeroNodes />
-          <div className="relative z-10 mb-6 flex flex-col items-center gap-6 sm:flex-row-reverse sm:items-center sm:justify-center sm:gap-4">
-            <Image
-              src="/profile.jpg"
-              alt="Portrait of Ebenezer Fuachie"
-              width={180}
-              height={180}
-              priority
-              className="shrink-0 rounded-full ring-2 ring-[var(--accent-gold)] transform transition-transform duration-300 ease-out [will-change:transform]"
-            />
-            <div className="text-center sm:text-left">
-              <h1 className="text-5xl font-extrabold tracking-tight sm:text-6xl">Ebenezer Fuachie</h1>
-              <p className="mt-2 text-xl font-medium text-gray-700 dark:text-gray-200 sm:text-2xl">
-                Junior Software Engineer -
-                <span className="block sm:inline"> Backend (Python)</span>
-              </p>
-              <p className="mt-3 text-lg font-semibold text-[var(--accent-green)] typewriter">
-                Let&apos;s Solve Problems!
-              </p>
-              {/* Primary actions aligned with left margin on desktop */}
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-start">
-                <a
-                  href="#projects"
-                  className="inline-flex items-center justify-center rounded-lg bg-[var(--accent-gold)] px-5 py-3 text-sm font-medium text-black transition hover:opacity-90"
-                >
-                  View Projects
-                </a>
-                <a
-                  href="#contact"
-                  className="inline-flex items-center justify-center rounded-lg border border-[var(--accent-green)] px-5 py-3 text-sm font-medium text-[var(--accent-green)] transition hover:bg-[#16a34a1A]"
-                >
-                  Contact Me
-                </a>
+
+          <div className="relative z-10 mx-auto w-full max-w-4xl">
+            <div className="flex flex-col gap-4 rounded-lg bg-white/80 p-4 shadow-sm dark:bg-black/40 sm:flex-row sm:items-center sm:gap-6 sm:p-6">
+              {/* Avatar */}
+              <div className="flex-shrink-0 mx-auto sm:mx-0">
+                <Image
+                  src="/profile.jpg"
+                  alt="Portrait of Ebenezer Fuachie"
+                  width={160}
+                  height={160}
+                  sizes="(max-width: 640px) 96px, (max-width: 768px) 112px, 144px"
+                  priority
+                  className="rounded-full ring-2 ring-[var(--accent-gold)] w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 object-cover"
+                />
+              </div>
+
+              {/* Primary profile info */}
+              <div className="min-w-0 flex-1">
+                <div className="flex items-start justify-between gap-4">
+                  <div className="truncate text-center sm:text-left">
+                    <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl">Ebenezer Fuachie</h1>
+                    <p className="mt-1 text-base text-gray-600 dark:text-gray-300 sm:text-lg">Junior Software Engineer • Backend (Python)</p>
+                    <div className="mt-2 flex items-center justify-center sm:justify-start gap-3 text-base text-gray-500 dark:text-gray-400">
+                      <span>Accra, Ghana</span>
+                      <span aria-hidden className="inline-block h-1 w-1 rounded-full bg-gray-300" />
+                      <span>Open to opportunities</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Action buttons (About Me / Projects) moved here */}
+                <div className="mt-8 sm:mt-10">
+                  <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
+                    <a
+                      href="#about"
+                      className="w-full sm:w-auto inline-flex items-center justify-center rounded-md bg-[var(--accent-gold)] px-5 py-2.5 text-base font-semibold text-black shadow-sm transition-shadow duration-150 hover:shadow-md text-center"
+                      aria-label="About Ebenezer"
+                    >
+                      <span>About Me</span>
+                    </a>
+                    <a
+                      href="#projects"
+                      className="w-full sm:w-auto inline-flex items-center justify-center rounded-md border border-[var(--accent-green)] bg-white px-5 py-2.5 text-base font-semibold text-[var(--accent-green)] transition-colors duration-150 hover:bg-[var(--accent-green-light)] text-center"
+                      aria-label="View Projects"
+                    >
+                      <span>Projects</span>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          
         </section>
 
         {/* About */}
