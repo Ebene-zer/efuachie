@@ -22,10 +22,37 @@ export const BRANDS = {
     slug: "qt",
     url: "https://www.riverbankcomputing.com/software/pyqt/",
   },
+  Flask: {
+    color: "#000000",
+    slug: "flask",
+    url: "https://flask.palletsprojects.com/",
+  },
+  Django: {
+    color: "#092E20",
+    slug: "django",
+    url: "https://www.djangoproject.com/",
+  },
   "MongoDB Atlas": {
     color: "#47A248",
     slug: "mongodb",
     url: "https://www.mongodb.com/atlas",
+  },
+
+  // Databases
+  SQLite: {
+    color: "#003B57",
+    slug: "sqlite",
+    url: "https://www.sqlite.org/",
+  },
+  MySQL: {
+    color: "#4479A1",
+    slug: "mysql",
+    url: "https://www.mysql.com/",
+  },
+  PostgreSQL: {
+    color: "#336791",
+    slug: "postgresql",
+    url: "https://www.postgresql.org/",
   },
 
   // Tools & Platforms
@@ -39,6 +66,7 @@ export const BRANDS = {
     slug: "githubactions",
     url: "https://github.com/features/actions",
   },
+  Docker: { color: "#2496ED", slug: "docker", url: "https://www.docker.com/" },
   "CI/CD": { color: "#6B7280" },
 
   // Split HTML/CSS into separate chips
