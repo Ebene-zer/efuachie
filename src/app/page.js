@@ -238,7 +238,7 @@ export default function Home() {
             </a>
             <span className="hidden h-4 w-px bg-gray-300 dark:bg-gray-700 sm:inline" aria-hidden="true" />
             <a
-              href="mailto:fuachie717@gmail.com?subject=Hello%20Ebenezer"
+              href="mailto:efuachie.dev@gmail.com?subject=Hello%20Ebenezer"
               className="inline-flex items-center gap-1.5 rounded-md px-2 py-1 text-gray-800 transition hover:text-[var(--accent-gold)] hover:opacity-90 dark:text-gray-200"
               aria-label="Email Ebenezer"
             >

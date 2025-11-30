@@ -2,7 +2,7 @@ export default function ContactActions({ whatsappHref }) {
   return (
     <div className="flex flex-col gap-3">
       <a
-        href="mailto:fuachie717@gmail.com?subject=Hello%20Ebenezer&body=Hi%20Ebenezer%2C%20"
+        href="mailto:efuachie.dev@gmail.com?subject=Hello%20Ebenezer&body=Hi%20Ebenezer%2C%20"
         className="inline-flex items-center justify-center gap-2 rounded-xl bg-[var(--accent-gold)] px-5 py-3 text-sm font-semibold text-black transition hover:opacity-90"
         aria-label="Email Ebenezer"
       >
