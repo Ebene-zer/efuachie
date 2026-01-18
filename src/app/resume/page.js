@@ -6,7 +6,6 @@ export const metadata = {
 import Link from "next/link";
 
 export default function ResumePage() {
-  const resumeExternal = process.env.NEXT_PUBLIC_RESUME_URL || "";
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
       <div className="mb-4">
@@ -29,50 +28,43 @@ export default function ResumePage() {
           <span className="hidden sm:inline">Home</span>
         </Link>
       </div>
-      <h1 className="text-3xl font-bold tracking-tight">Resume</h1>
+      <h1 className="text-3xl font-bold tracking-tight">Resume & CV</h1>
       <p className="mt-2 text-gray-600 dark:text-gray-300">
-        Below is an embedded PDF view. You can also download or open it in a new tab.
+        Access my CV and resume documents below.
       </p>
 
-      {/* Actions */}
-      <div className="mt-5 flex flex-wrap gap-3">
-        <a
-          href="/Ebenezer_Fuachie_Resume.pdf"
-          target="_blank"
-          rel="noreferrer noopener"
-          className="inline-flex items-center justify-center rounded-md bg-[var(--accent-gold)] px-4 py-2 text-sm font-medium text-black transition hover:opacity-90"
-        >
-          Open PDF in new tab
-        </a>
-        {resumeExternal ? (
+      {/* Documents */}
+      <div className="mt-8 space-y-4">
+        <div className="rounded-lg border border-gray-200 p-6 dark:border-gray-800">
+          <h2 className="text-lg font-semibold">CV</h2>
+          <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            Detailed curriculum vitae with comprehensive work history and achievements.
+          </p>
           <a
-            href={resumeExternal}
+            href="https://docs.google.com/document/d/13M83eTEOZ6IORnUW75Sh04quKnvITaBqfABB5OqALUk/edit?usp=sharing"
             target="_blank"
             rel="noreferrer noopener"
-            className="inline-flex items-center justify-center rounded-md border border-black px-4 py-2 text-sm font-medium text-black transition hover:bg-black hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black"
+            className="mt-4 inline-flex items-center justify-center rounded-md bg-[var(--accent-gold)] px-4 py-2 text-sm font-medium text-black transition hover:opacity-90"
           >
-            Open external resume link
+            Open CV in Google Docs
           </a>
-        ) : null}
-      </div>
+        </div>
 
-      {/* Embedded viewer */}
-      <div className="mt-6 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800">
-        <object
-          data="/Ebenezer_Fuachie_Resume.pdf#toolbar=0"
-          type="application/pdf"
-          className="h-[80vh] w-full"
-        >
-          <iframe src="/Ebenezer_Fuachie_Resume.pdf" className="h-[80vh] w-full" title="Resume PDF" />
-        </object>
+        <div className="rounded-lg border border-gray-200 p-6 dark:border-gray-800">
+          <h2 className="text-lg font-semibold">Resume</h2>
+          <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            Concise professional resume highlighting key skills and experience.
+          </p>
+          <a
+            href="https://docs.google.com/document/d/1s4uE9VQqJbHA7hMvooswSC1cWHGhuUVdU_byrV_Pgak/edit?usp=sharing"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="mt-4 inline-flex items-center justify-center rounded-md border border-black px-4 py-2 text-sm font-medium text-black transition hover:bg-black hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black"
+          >
+            Open Resume in Google Docs
+          </a>
+        </div>
       </div>
-
-      {process.env.NODE_ENV === "development" && (
-        <p className="mt-4 text-sm text-gray-500">
-          Don’t see the PDF? Ensure a file named <code>Ebenezer_Fuachie_Resume.pdf</code> exists in your <code>public/</code> folder
-          or set <code>NEXT_PUBLIC_RESUME_URL</code> to an external document (e.g., Google Drive) and redeploy.
-        </p>
-      )}
     </main>
   );
 }
