@@ -43,7 +43,7 @@ export default function Home() {
       <HeaderBar />
 
       <main id="content" className="mx-auto max-w-5xl px-6 pb-16 sm:pb-24">
-        {/* Hero (LinkedIn-like profile style) */}
+        {/* Hero */}
         <section
           id="home"
           className="mb-16 scroll-mt-24 sm:mb-24 min-h-[calc(100svh-64px)] flex items-center relative overflow-hidden pt-10 sm:pt-14"
@@ -69,7 +69,7 @@ export default function Home() {
                 <div className="flex items-start justify-between gap-4">
                   <div className="truncate text-center sm:text-left">
                     <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl">Ebenezer Fuachie</h1>
-                    <p className="mt-1 text-base text-gray-600 dark:text-gray-300 sm:text-lg">Junior Software Engineer • Backend (Python)</p>
+                    <p className="mt-1 text-base text-gray-600 dark:text-gray-300 sm:text-lg">Junior Software Engineer • Backend</p>
                     <div className="mt-2 flex items-center justify-center sm:justify-start gap-3 text-base text-gray-500 dark:text-gray-400">
                       <span>Accra, Ghana</span>
                       <span aria-hidden className="inline-block h-1 w-1 rounded-full bg-gray-300" />
@@ -210,7 +210,7 @@ export default function Home() {
                 Open to opportunities
               </span>
               <p className="mt-3 text-sm text-gray-700 dark:text-gray-300">
-                Interested in working together or have a question? I typically respond within 24–48 hours.
+                Interested in working together or have a question? I typically respond within 24 hours.
               </p>
               <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
                 Email or WhatsApp is best, but you can also reach me on LinkedIn or GitHub.
