@@ -1,6 +1,6 @@
 # Ebenezer Fuachie – Portfolio Website
 
-A modern, responsive personal portfolio built with **Next.js**, **Tailwind CSS**, and **Framer Motion** to showcase my projects, skills, and experience as a software engineer.
+A personal portfolio website that showcases my projects, skills, and experience as a software engineer.
 
 ---
 
@@ -24,20 +24,3 @@ src/
 └─ utils/ # Constants and helper functions
 
 ```
-
-
----
-
-##  Features
-- Fully responsive modern UI  
-- Animated page transitions and elements  
-- SEO-optimized structure  
-- Easy to scale and update (projects, skills, etc.)  
-
----
-
-##  Getting Started
-1. **Clone this repository**
-   ```bash
-   git clone https://github.com/Ebene-zer/My-Portfolio.git
-   cd My-Portfolio
