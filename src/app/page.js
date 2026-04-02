@@ -201,7 +201,7 @@ export default function Home() {
 
         {/* Contact */}
   <section id="contact" className="mb-8 scroll-mt-24 sm:mb-12">
-          <h2 className="text-2xl font-semibold tracking-tight">Reach Out to Me</h2>
+          <h2 className="text-2xl font-semibold tracking-tight">Contact</h2>
           <span className="mt-1 block h-1 w-12 rounded bg-[var(--accent-gold)]" aria-hidden="true" />
           <div className="mt-6 grid gap-6 sm:grid-cols-2">
             {/* Left: short message card */}

@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function ResumePage() {
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
-      <div className="rounded-2xl bg-[var(--section-bg-grey)] dark:bg-[var(--section-bg-grey)]/60 p-6">
+      <div className="rounded-2xl bg-[var(--section-bg-project)] dark:bg-[var(--section-bg-project)]/85 p-6">
         <div className="mb-4">
         <Link
           href="/"
