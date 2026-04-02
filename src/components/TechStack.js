@@ -1,6 +1,6 @@
 export default function TechStack() {
   // Importing within the component to keep this file tree-shakeable if not used elsewhere
-  const { BRANDS, TECH_SECTIONS } = require("@/data/brands.js");
+  const { BRANDS} = require("@/data/brands.js");
   const renderBrandVisual = (name) => {
     const entry = BRANDS[name] || {};
     const hex = (entry.color || "#6B7280").replace("#", "");
@@ -28,12 +28,25 @@ export default function TechStack() {
     {
       label: "Languages",
       ariaLabel: "Programming languages",
-      items: [{ name: "Python" }],
+      items: [
+        { name: "Python"  },
+        {name: "Java"},
+        {name: "C++"},
+        {name: "JavaScript"},
+        {name: "SQL"}
+      ],
     },
     {
-      label: "Backend & Frameworks",
+      label: "Frameworks & Libraries",
       ariaLabel: "Backend frameworks and libraries",
-      items: [{ name: "Flask", note: "Learning" }, { name: "Django", note: "Learning" }],
+      items: [
+        { name: "Flask" }, 
+        { name: "Django" },
+        {name: "Node.js"},
+        { name: "PyQt6" },
+        { name: "Next.js" },
+        { name: "Tailwind CSS" }
+      ],
     },
     {
       label: "Databases",
@@ -41,8 +54,8 @@ export default function TechStack() {
       items: [
         { name: "SQLite" },
         { name: "MySQL" },
-        { name: "PostgreSQL", note: "Learning" },
-        { name: "MongoDB Atlas", note: "Learning" },
+        { name: "PostgreSQL" },
+        { name: "MongoDB Atlas"},
       ],
     },
     {
@@ -54,7 +67,8 @@ export default function TechStack() {
         { name: "Postman" },
         { name: "Trello" },
         { name: "Figma" },
-        { name: "Docker", note: "Learning" }
+        { name: "Docker" },
+        { name: "CI/CD (GitHub Actions)" },
       ],
     },
   ];

@@ -8,7 +8,8 @@ import Link from "next/link";
 export default function ResumePage() {
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
-      <div className="mb-4">
+      <div className="rounded-2xl bg-[var(--section-bg-project)] dark:bg-[var(--section-bg-project)]/85 p-6">
+        <div className="mb-4">
         <Link
           href="/"
           aria-label="Back to home"
@@ -25,7 +26,7 @@ export default function ResumePage() {
           >
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
           </svg>
-          <span className="hidden sm:inline">Home</span>
+          <span className="hidden sm:inline">Back</span>
         </Link>
       </div>
       <h1 className="text-3xl font-bold tracking-tight">Resume & CV</h1>
@@ -63,6 +64,7 @@ export default function ResumePage() {
           >
             Open Resume in Google Docs
           </a>
+        </div>
         </div>
       </div>
     </main>

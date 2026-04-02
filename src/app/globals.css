@@ -6,6 +6,8 @@
   --accent-gold: #d4af37; /* classic gold */
   --accent-green: #16a34a; /* green-600 */
   --accent-green-light: #BBF7D0; /* light green for hover backgrounds */
+  --section-bg-grey: #f3f4f6; /* soft grey for alternating section backgrounds */
+  --section-bg-project: #f9fafc; /* lighter than about section */
 }
 
 
@@ -13,6 +15,8 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ffffff;
+    --section-bg-grey: #0b1220; /* darker subtle grey for dark mode */
+    --section-bg-project: #0f1b2a; /* slightly lighter in dark mode */
   }
 }
 

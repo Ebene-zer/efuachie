@@ -1,7 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import HeaderBar from "@/components/HeaderBar";
 import TechStack from "@/components/TechStack";
-// Decorative hero nodes removed to disable animated background
 import ContactActions from "@/components/ContactActions";
 import { projects } from "@/data/projects";
 import FocusOnNavigate from "@/components/FocusOnNavigate";
@@ -11,7 +11,7 @@ export default function Home() {
   // WhatsApp config (set NEXT_PUBLIC_WHATSAPP in your env, e.g. +233555123456)
   const whatsappNumberRaw = process.env.NEXT_PUBLIC_WHATSAPP || "";
   const whatsappNumber = whatsappNumberRaw.replace(/[^0-9]/g, ""); // keep digits only
-  const whatsappText = "Hello Ebenezer, I saw your portfolio and would like to connect.";
+  const whatsappText = "Hello Ebenezer, I saw your portfolio and would like to build with you.";
   const whatsappHref =
     whatsappNumber ? `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}` : null;
 
@@ -69,11 +69,9 @@ export default function Home() {
                 <div className="flex items-start justify-between gap-4">
                   <div className="truncate text-center sm:text-left">
                     <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl">Ebenezer Fuachie</h1>
-                    <p className="mt-1 text-base text-gray-600 dark:text-gray-300 sm:text-lg">Junior Software Engineer • Backend</p>
+                    <p className="mt-1 text-base text-gray-600 dark:text-gray-300 sm:text-lg">Software Engineer • Backend Development</p>
                     <div className="mt-2 flex items-center justify-center sm:justify-start gap-3 text-base text-gray-500 dark:text-gray-400">
                       <span>Accra, Ghana</span>
-                      <span aria-hidden className="inline-block h-1 w-1 rounded-full bg-gray-300" />
-                      <span>Open to opportunities</span>
                     </div>
                   </div>
                 </div>
@@ -102,23 +100,21 @@ export default function Home() {
           </div>
         </section>
 
-        {/* About */}
-  <section id="about" className="mb-16 scroll-mt-24 sm:mb-24">
-          <h2 className="text-2xl font-semibold tracking-tight">About</h2>
+          {/* About */}
+        <section id="about" className="mb-16 scroll-mt-24 sm:mb-24 bg-[var(--section-bg-grey)] dark:bg-[var(--section-bg-grey)]/60 rounded-2xl p-6">
+          <h2 className="text-2xl font-semibold tracking-tight">About Me</h2>
           <span className="mt-1 block h-1 w-12 rounded bg-[var(--accent-gold)]" aria-hidden="true" />
           <p className="mt-3 max-w-2xl text-gray-600 dark:text-gray-300">
-          I’m a Junior Software Engineer focused on backend development with Python. 
+          I’m a Junior Software Engineer with a strong focus on backend development. 
           I enjoy turning ideas into working systems, breaking down problems clearly, 
           and building solutions that are reliable, simple, and scalable.
           </p>
           <p className="mt-3 max-w-2xl text-gray-600 dark:text-gray-300">
-           I learn fast, work well in teams, and adapt quickly - whether I’m contributing to backend services, 
-           improving database logic, or supporting a project’s technical direction.
-           I’m currently open to internships, junior developer roles, and collaborative software projects.
+           I have worked on a couple of school and personal projects thus far, which have given me hands-on experience with practical problem-solving.
           </p>
           <p className="mt-3 max-w-2xl text-gray-600 dark:text-gray-300">
-            Core Concepts: Problem Solving, Software Development Life Cycle (SDLC), Data Structures & Algorithm, 
-            Object-Oriented Programming (OOP), SQL, APIs, Software Design Basics and Agile/Scrum.
+            Core Concepts exercised include; Software Development Life Cycle (SDLC), System Design, APIs, Data Structures & Algorithm, 
+            Object-Oriented Programming (OOP) and Agile/Scrum.
           </p>
           {/* Divider between About and Tech Stack (tiny gold dots) */}
           <div className="mt-6 flex items-center justify-center" aria-hidden="true">
@@ -127,13 +123,17 @@ export default function Home() {
             <span className="mx-0.5 inline-block h-1.5 w-1.5 rounded-full bg-[var(--accent-gold)]/90" />
           </div>
 
-          {/* Tech Stack (extracted into component for maintainability) */}
-          <TechStack />
-        
         </section>
 
-        {/* Projects */}
-  <section id="projects" className="mb-16 scroll-mt-24 sm:mb-24">
+  {/* Tech Stack */}
+    <section id="tech" className="mb-16 scroll-mt-24 sm:mb-24">
+      <div className="rounded-lg bg-white/0 p-0">{/* container for future styling */}
+       <TechStack />
+      </div>
+    </section>
+
+        {/* Projects Section*/}
+  <section id="projects" className="mb-16 scroll-mt-24 sm:mb-24 bg-[var(--section-bg-project)] dark:bg-[var(--section-bg-project)]/85 rounded-2xl p-6">
           <h2 className="text-2xl font-semibold tracking-tight">Projects</h2>
           <span className="mt-1 block h-1 w-12 rounded bg-[var(--accent-gold)]" aria-hidden="true" />
           <div className="mt-6 grid gap-6 sm:grid-cols-2">
@@ -207,13 +207,13 @@ export default function Home() {
             {/* Left: short message card */}
             <div className="rounded-2xl border border-[var(--accent-gold)]/50 bg-white/60 p-5 backdrop-blur dark:bg-black/40">
               <span className="inline-flex items-center rounded-full bg-[var(--accent-green)]/10 px-2.5 py-1 text-xs font-medium text-[var(--accent-green)]">
-                Open to opportunities
+                Open to collaborations
               </span>
               <p className="mt-3 text-sm text-gray-700 dark:text-gray-300">
-                Interested in working together or have a question? I typically respond within 24 hours.
+                Interested in working together? Do not hesitate to reach out!
               </p>
               <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
-                Email or WhatsApp is best, but you can also reach me on LinkedIn or GitHub.
+                Your message is warmly welcomed. Let's build something great together!
               </p>
             </div>
 
