@@ -9,10 +9,10 @@ export const projects = [
   },
   {
     title: "Personal Portfolio Website",
-    description: "Personal portfolio website built with Next.js and Tailwind CSS.",
+    description: "Personal portfolio website",
     tags: ["Next.js", "Tailwind CSS"],
     href: "https://efuachie.vercel.app/",
-    features: ["Responsive Design", "Smooth Scrolling"],
+    features: ["About Me", "Projects"],
     icon: "/favicon.ico",
   },
 ];
