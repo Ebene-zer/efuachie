@@ -1,7 +1,6 @@
 import Image from "next/image";
 import HeaderBar from "@/components/HeaderBar";
 import TechStack from "@/components/TechStack";
-// Decorative hero nodes removed to disable animated background
 import ContactActions from "@/components/ContactActions";
 import { projects } from "@/data/projects";
 import FocusOnNavigate from "@/components/FocusOnNavigate";
