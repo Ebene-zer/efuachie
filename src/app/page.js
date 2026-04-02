@@ -100,8 +100,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* About */}
-  <section id="about" className="mb-16 scroll-mt-24 sm:mb-24">
+          {/* About */}
+        <section id="about" className="mb-16 scroll-mt-24 sm:mb-24 bg-[var(--section-bg-grey)] dark:bg-[var(--section-bg-grey)]/60 rounded-2xl p-6">
           <h2 className="text-2xl font-semibold tracking-tight">About Me</h2>
           <span className="mt-1 block h-1 w-12 rounded bg-[var(--accent-gold)]" aria-hidden="true" />
           <p className="mt-3 max-w-2xl text-gray-600 dark:text-gray-300">
@@ -123,13 +123,17 @@ export default function Home() {
             <span className="mx-0.5 inline-block h-1.5 w-1.5 rounded-full bg-[var(--accent-gold)]/90" />
           </div>
 
-          {/* Tech Stack */}
-          <TechStack />
-        
         </section>
 
+  {/* Tech Stack */}
+    <section id="tech" className="mb-16 scroll-mt-24 sm:mb-24">
+      <div className="rounded-lg bg-white/0 p-0">{/* container for future styling */}
+       <TechStack />
+      </div>
+    </section>
+
         {/* Projects Section*/}
-  <section id="projects" className="mb-16 scroll-mt-24 sm:mb-24">
+  <section id="projects" className="mb-16 scroll-mt-24 sm:mb-24 bg-[var(--section-bg-project)] dark:bg-[var(--section-bg-project)]/85 rounded-2xl p-6">
           <h2 className="text-2xl font-semibold tracking-tight">Projects</h2>
           <span className="mt-1 block h-1 w-12 rounded bg-[var(--accent-gold)]" aria-hidden="true" />
           <div className="mt-6 grid gap-6 sm:grid-cols-2">
