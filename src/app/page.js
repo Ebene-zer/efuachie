@@ -1,16 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
-import Image from "next/image";
-import HeaderBar from "@/components/HeaderBar";
-import TechStack from "@/components/TechStack";
-import ContactActions from "@/components/ContactActions";
-import { projects } from "@/data/projects";
-import FocusOnNavigate from "@/components/FocusOnNavigate";
+// import Image from "next/image";
+// import HeaderBar from "@/components/HeaderBar";
+// import TechStack from "@/components/TechStack";
+// import ContactActions from "@/components/ContactActions";
+// import { projects } from "@/data/projects";
+// import FocusOnNavigate from "@/components/FocusOnNavigate";
 
 export default function Home() {
 
   //Mentainance Message
   return{
-    <h2 className="text-2xl font-semibold tracking-tight">Site currently under Mentainance</h2>
+    <h2>Site currently under Mentainance</h2>
   }
 
   // // WhatsApp config (set NEXT_PUBLIC_WHATSAPP in your env, e.g. +233555123456)
