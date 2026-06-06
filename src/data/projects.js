@@ -1,18 +1,18 @@
 export const projects = [
+    {
+    title: "DATALUXE",
+    description: "VTU platform",
+    tags: ["PHP", "MySQL", "XAMPP"],
+    href: "https://dataluxe.eliteplus.shop/",
+    features: ["Airtime Topup", "Data Bundle", "Bill Payments"],
+    icon: "/dataluxe.ico",
+  },
   {
     title: "Tradia",
     description: "Wholesale Management System.",
-    tags: ["Python", "PyQt6"],
+    tags: ["Python", "PyQt6", "SQLite"],
     href: "https://github.com/Ebene-zer/Tradia/releases",
     features: ["Inventory", "Sales", "Reports"],
     icon: "/tradia.ico",
-  },
-  {
-    title: "Personal Portfolio Website",
-    description: "Personal portfolio website",
-    tags: ["Next.js", "Tailwind CSS"],
-    href: "https://efuachie.vercel.app/",
-    features: ["About Me", "Projects"],
-    icon: "/favicon.ico",
   },
 ];
