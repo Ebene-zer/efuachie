@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
+import Link from "next/link";
 import HeaderBar from "@/components/HeaderBar";
-import TechStack from "@/components/TechStack";
+//import TechStack from "@/components/TechStack"; /May consider including that later
 import ContactActions from "@/components/ContactActions";
 import { projects } from "@/data/projects";
 import FocusOnNavigate from "@/components/FocusOnNavigate";
@@ -69,7 +70,7 @@ export default function Home() {
                 <div className="flex items-start justify-between gap-4">
                   <div className="truncate text-center sm:text-left">
                     <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl">Ebenezer Fuachie</h1>
-                    <p className="mt-1 text-base text-gray-600 dark:text-gray-300 sm:text-lg">Software Engineer • Backend Development</p>
+                    <p className="mt-1 text-base text-gray-600 dark:text-gray-300 sm:text-lg">Software Engineer</p>
                     <div className="mt-2 flex items-center justify-center sm:justify-start gap-3 text-base text-gray-500 dark:text-gray-400">
                       <span>Accra, Ghana</span>
                     </div>
@@ -105,18 +106,14 @@ export default function Home() {
           <h2 className="text-2xl font-semibold tracking-tight">About Me</h2>
           <span className="mt-1 block h-1 w-12 rounded bg-[var(--accent-gold)]" aria-hidden="true" />
           <p className="mt-3 max-w-2xl text-gray-600 dark:text-gray-300">
-          I’m a Junior Software Engineer with a strong focus on backend development. 
-          I enjoy turning ideas into working systems, breaking down problems clearly, 
+          A Practical Software Engineer with a strong interest in backend systems. 
+          Have the passion for turning ideas into working systems, breaking down problems clearly, 
           and building solutions that are reliable, simple, and scalable.
           </p>
           <p className="mt-3 max-w-2xl text-gray-600 dark:text-gray-300">
-           I have worked on a couple of school and personal projects thus far, which have given me hands-on experience with practical problem-solving.
+            Check out some of my <Link href="#projects" className="text-600 hover:text-blue-800 underline font-semibold">Projects here.</Link> 
           </p>
-          <p className="mt-3 max-w-2xl text-gray-600 dark:text-gray-300">
-            Core Concepts exercised include; Software Development Life Cycle (SDLC), System Design, APIs, Data Structures & Algorithm, 
-            Object-Oriented Programming (OOP) and Agile/Scrum.
-          </p>
-          {/* Divider between About and Tech Stack (tiny gold dots) */}
+          {/* tiny gold dots */}
           <div className="mt-6 flex items-center justify-center" aria-hidden="true">
             <span className="mx-0.5 inline-block h-1.5 w-1.5 rounded-full bg-[var(--accent-gold)]/90" />
             <span className="mx-0.5 inline-block h-1.5 w-1.5 rounded-full bg-[var(--accent-gold)]/70" />
@@ -124,13 +121,6 @@ export default function Home() {
           </div>
 
         </section>
-
-  {/* Tech Stack */}
-    <section id="tech" className="mb-16 scroll-mt-24 sm:mb-24">
-      <div className="rounded-lg bg-white/0 p-0">{/* container for future styling */}
-       <TechStack />
-      </div>
-    </section>
 
         {/* Projects Section*/}
   <section id="projects" className="mb-16 scroll-mt-24 sm:mb-24 bg-[var(--section-bg-project)] dark:bg-[var(--section-bg-project)]/85 rounded-2xl p-6">

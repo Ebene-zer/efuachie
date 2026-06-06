@@ -34,7 +34,7 @@ export const metadata = {
   metadataBase: siteUrl ? new URL(siteUrl) : undefined,
   title: "Ebenezer Fuachie - Portfolio",
   description:
-    "Personal portfolio of Ebenezer Fuachie showcasing projects, experience, and ways to get in touch.",
+    "Portfolio of Ebenezer Fuachie showcasing projects, experience, and ways to get in touch.",
   authors: [{ name: "Ebenezer Fuachie" }],
   applicationName: "Fuachie Portfolio",
   keywords: [
@@ -49,7 +49,7 @@ export const metadata = {
   openGraph: {
     title: "Ebenezer Fuachie - Portfolio",
     description:
-      "Personal portfolio of Ebenezer Fuachie showcasing projects, experience, and ways to get in touch.",
+      "Portfolio of Ebenezer Fuachie showcasing projects, experience, and ways to get in touch.",
     url: "/",
     siteName: "Ebenezer Fuachie - Portfolio",
     locale: "en_US",

@@ -9,7 +9,7 @@ export default function ContactActions({ whatsappHref }) {
         <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 fill-black">
           <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 2v.01L12 12 4 6.01V6h16ZM4 18V8.236l7.386 5.54a1 1 0 0 0 1.228 0L20 8.236V18H4Z" />
         </svg>
-        Email me
+        Email
       </a>
 
       {whatsappHref ? (
