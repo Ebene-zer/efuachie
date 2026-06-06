@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import HeaderBar from "@/components/HeaderBar";
-import TechStack from "@/components/TechStack";
+//import TechStack from "@/components/TechStack"; /May consider including that later
 import ContactActions from "@/components/ContactActions";
 import { projects } from "@/data/projects";
 import FocusOnNavigate from "@/components/FocusOnNavigate";
@@ -113,7 +113,7 @@ export default function Home() {
           <p className="mt-3 max-w-2xl text-gray-600 dark:text-gray-300">
             Check out some of my <Link href="#projects" className="text-600 hover:text-blue-800 underline font-semibold">Projects here.</Link> 
           </p>
-          {/* Divider between About and Tech Stack (tiny gold dots) */}
+          {/* tiny gold dots */}
           <div className="mt-6 flex items-center justify-center" aria-hidden="true">
             <span className="mx-0.5 inline-block h-1.5 w-1.5 rounded-full bg-[var(--accent-gold)]/90" />
             <span className="mx-0.5 inline-block h-1.5 w-1.5 rounded-full bg-[var(--accent-gold)]/70" />
@@ -121,13 +121,6 @@ export default function Home() {
           </div>
 
         </section>
-
-  {/* Tech Stack */}
-    <section id="tech" className="mb-16 scroll-mt-24 sm:mb-24">
-      <div className="rounded-lg bg-white/0 p-0">{/* container for future styling */}
-       <TechStack />
-      </div>
-    </section>
 
         {/* Projects Section*/}
   <section id="projects" className="mb-16 scroll-mt-24 sm:mb-24 bg-[var(--section-bg-project)] dark:bg-[var(--section-bg-project)]/85 rounded-2xl p-6">
