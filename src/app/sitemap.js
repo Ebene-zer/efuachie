@@ -15,7 +15,7 @@ export default function sitemap() {
       priority: 1,
     },
     {
-      url: `${base}/resume`,
+      url: `${base}/projects`,
       lastModified: now,
       changeFrequency: "yearly",
       priority: 0.5,

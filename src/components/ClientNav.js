@@ -82,13 +82,13 @@ export default function ClientNav() {
         >
           Contact
         </a>
-        <a
+        {/* <a
           href="/resume"
           className={base}
           title="View resume"
         >
           Resume
-        </a>
+        </a> */}
       </div>
 
       {/* Mobile toggle button */}
@@ -148,14 +148,14 @@ export default function ClientNav() {
           >
             Contact
           </a>
-          <a
+          {/* <a
             href="/resume"
             role="menuitem"
             className="block rounded-md px-3 py-2 text-gray-900 hover:bg-white/60 dark:text-gray-100 dark:hover:bg-white/10"
             onClick={() => setOpen(false)}
           >
             Resume
-          </a>
+          </a> */}
         </div>
       )}
     </div>
